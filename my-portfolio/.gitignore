@@ -16,6 +16,12 @@ dist-ssr
 service-account.json
 *.serviceAccountKey.json
 
+# Local admin/maintenance scripts (contain hardcoded keys or credentials)
+upload-cv.mjs
+patch-cv-meta.mjs
+set-cors.mjs
+cors.json
+
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json
