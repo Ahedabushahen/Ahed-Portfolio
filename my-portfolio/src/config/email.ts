@@ -1,0 +1,4 @@
+export const EMAIL_SERVICE_ID = import.meta.env.VITE_EMAILJS_SERVICE_ID;
+export const EMAIL_TEMPLATE_THANKYOU = import.meta.env.VITE_EMAILJS_TEMPLATE_THANKYOU;
+export const EMAIL_TEMPLATE_ADMIN = import.meta.env.VITE_EMAILJS_TEMPLATE_ADMIN;
+export const EMAIL_PUBLIC_KEY = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;

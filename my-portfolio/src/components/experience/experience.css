@@ -1,0 +1,116 @@
+.experience__timeline {
+  margin-top: 3rem;
+  position: relative;
+  padding-left: 2rem;
+}
+
+.experience__timeline::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 8px;
+  bottom: 8px;
+  width: 2px;
+  background: var(--border-color);
+}
+
+.experience__item {
+  position: relative;
+  margin-bottom: 2.5rem;
+}
+
+.experience__item:last-child {
+  margin-bottom: 0;
+}
+
+.experience__item--skeleton {
+  padding: 1.5rem;
+  background: var(--bg-card);
+  border-radius: var(--radius);
+  border: 1px solid var(--border-color);
+}
+
+.experience__dot {
+  position: absolute;
+  left: -2.4rem;
+  top: 6px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: var(--accent-purple);
+  border: 2px solid var(--bg-primary);
+  box-shadow: 0 0 0 3px rgba(124, 58, 237, 0.25);
+}
+
+.experience__body {
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius);
+  padding: 1.5rem;
+  transition: border-color 0.2s;
+}
+
+.experience__body:hover {
+  border-color: rgba(124, 58, 237, 0.3);
+}
+
+.experience__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  flex-wrap: wrap;
+}
+
+.experience__role {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 0.25rem;
+}
+
+.experience__company {
+  font-size: 0.875rem;
+  color: var(--accent-cyan);
+  font-weight: 600;
+}
+
+.experience__period {
+  font-size: 0.78rem;
+  color: var(--text-muted);
+  background: rgba(255, 255, 255, 0.05);
+  padding: 0.25rem 0.6rem;
+  border-radius: 100px;
+  white-space: nowrap;
+}
+
+.experience__bullets {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.experience__bullets li {
+  font-size: 0.875rem;
+  color: var(--text-secondary);
+  line-height: 1.65;
+  padding-left: 1rem;
+  position: relative;
+}
+
+.experience__bullets li::before {
+  content: '›';
+  position: absolute;
+  left: 0;
+  color: var(--accent-purple);
+  font-weight: 700;
+}
+
+@media (max-width: 600px) {
+  .experience__header {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+}
